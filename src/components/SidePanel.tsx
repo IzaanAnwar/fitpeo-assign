@@ -7,7 +7,7 @@ import PromoteIcon from "@mui/icons-material/SupervisedUserCircleOutlined";
 import HelpIcon from "@mui/icons-material/LiveHelpOutlined";
 const SidePanel = () => {
   return (
-    <div className="text-sm w-1/2 md:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 flex flex-col justify-between">
+    <div className="text-sm w-1/2 md:w-[24%] lg:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 pt-8 md:pt-4 lg:pt-4 flex flex-col justify-between overflow-y-auto">
       <div>
         <div className="font-semibold py-2 px-4 text-light-text-pr flex justify-start items-center">
           <SettingsIcon />
@@ -55,7 +55,7 @@ const SidePanel = () => {
         <img
           src="/dummy-usr.png"
           alt="User"
-          className="rounded-full w-[32%] md:w-[16%] h-[32%] md:h-[16%]"
+          className="rounded-full w-[28%] h-[28%] md:w-[24%]  md:h-[24%] lg:w-[16%] lg-h[16%]"
         />
         <div className="px-4">
           <h6 className="font-semibold text-light-text-pr">Evanto</h6>
