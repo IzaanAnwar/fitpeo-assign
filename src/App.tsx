@@ -7,13 +7,15 @@ import BalanceAccountIcon from "@mui/icons-material/AccountBalanceWalletOutlined
 import TotalSalesIcon from "@mui/icons-material/WorkOutlineOutlined";
 import CustomerStats from "./components/CustomersStats";
 import EarningOverview from "./components/EarningOverview";
-// block lg:flex justify-between items-center px-2 md:px-12 py-4 md:py-6
+import SalesReport from "./components/SalesReport";
 function App() {
   return (
     <>
-      <div className="block md:flex items-start">
-        <SidePanel />
-        <div className="w-full">
+      <div className="block md:grid grid-cols-5 items-start">
+        <div className="col-span-1">
+          <SidePanel />
+        </div>
+        <div className="w-full col-span-4">
           <Navbar />
           <section className="px-2 md:px-12 py-4 md:py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
@@ -54,13 +56,16 @@ function App() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4 ">
               <div className="md:col-span-2">
                 <EarningOverview />
               </div>
-              <div className="col-span-1">
+              <div className="col-span-1 bg-primary-bg rounded-md">
                 <CustomerStats />
               </div>
+            </div>
+            <div className="my-4 gap-4">
+              <SalesReport />
             </div>
           </section>
         </div>

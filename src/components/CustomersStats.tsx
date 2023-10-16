@@ -75,7 +75,7 @@ export const data = {
 
 const CustomerStats = () => {
   return (
-    <div className="p-4 rounded-md bg-primary-bg">
+    <div className="p-4 rounded-md bg-primary-bg ">
       <div className="py-4">
         <span>
           <h3 className="font-semibold">Customers</h3>
@@ -84,10 +84,10 @@ const CustomerStats = () => {
           </p>
         </span>
       </div>
-      <div className="max-w-screen md:min-w-fit relative">
+      <div className="max-w-screen md:max-w-fit relative">
         <Doughnut data={data} />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <div className="text-center max-w-fit">
+          <div className="text-center max-w-[25%]">
             <h1 className="text-lg font-bold">65%</h1>
             <p className="text-xs">Total New Customers</p>
           </div>

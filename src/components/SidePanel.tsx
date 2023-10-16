@@ -9,7 +9,7 @@ import ExpandArrowIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import ExpandDownIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 const SidePanel = () => {
   return (
-    <div className="hidden md:flex flex-col justify-between text-xs w-1/2 md:w-[24%] lg:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 ">
+    <div className="fixed hidden md:flex flex-col justify-between text-xs w-1/2 md:w-[24%] lg:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 ">
       <div>
         <div className="font-semibold py-2 px-4 text-light-text-pr flex justify-start items-center">
           <SettingsIcon />

@@ -65,18 +65,18 @@ export const data = {
 
 const EarningOverview = () => {
   return (
-    <div className="p-4 rounded-md  bg-primary-bg">
+    <div className="p-4 rounded-md  bg-primary-bg ">
       <div className="flex justify-between items-center py-4">
-        <span className="px-2">
+        <span className="px-2 ">
           <h3 className="font-semibold">Overview</h3>
           <p className="text-xs text-light-text-sc">Monthly Earning</p>
         </span>
-        <span className="px-2 flex justify-around text-xs text-light-text-sc items-center">
+        <span className="p-2 flex justify-around text-xs text-light-text-sc items-center rounded-md hover:bg-darker-bg duration-100">
           <p>Quaterly</p>
           <ExpandDownIcon fontSize="small" />
         </span>
       </div>
-      <div className="max-w-screen md:min-w-fit">
+      <div className="max-w-screen md:max-w-full">
         <Bar options={options} data={data} />
       </div>
     </div>
