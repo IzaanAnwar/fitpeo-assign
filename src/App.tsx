@@ -5,6 +5,8 @@ import EarningsIcon from "@mui/icons-material/CurrencyExchangeOutlined";
 import OrderBookIcon from "@mui/icons-material/LibraryBooksOutlined";
 import BalanceAccountIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import TotalSalesIcon from "@mui/icons-material/WorkOutlineOutlined";
+import CustomerStats from "./components/CustomersStats";
+import EarningOverview from "./components/EarningOverview";
 // block lg:flex justify-between items-center px-2 md:px-12 py-4 md:py-6
 function App() {
   return (
@@ -50,6 +52,14 @@ function App() {
                   upBy={10}
                   totalAmount={89000}
                 />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+              <div className="md:col-span-2">
+                <EarningOverview />
+              </div>
+              <div className="col-span-1">
+                <CustomerStats />
               </div>
             </div>
           </section>

@@ -9,7 +9,7 @@ import ExpandArrowIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import ExpandDownIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 const SidePanel = () => {
   return (
-    <div className="hidden md:flex flex-col justify-between text-sm w-1/2 md:w-[24%] lg:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 ">
+    <div className="hidden md:flex flex-col justify-between text-xs w-1/2 md:w-[24%] lg:w-[20%] bg-accent-primary min-h-screen text-left text-light-text-sc p-4 ">
       <div>
         <div className="font-semibold py-2 px-4 text-light-text-pr flex justify-start items-center">
           <SettingsIcon />
@@ -71,14 +71,14 @@ const SidePanel = () => {
           <ExpandArrowIcon fontSize="inherit" />
         </div>
       </div>
-      <div className="rounded-md px-4 py-2 flex justify-between items-center hover:bg-accent-hover hover:text-light-text-pr duration-100">
+      <div className="rounded-md p-2 flex justify-between items-center hover:bg-accent-hover hover:text-light-text-pr duration-100">
         <span className="flex justify-start items-center">
           <img
             src="/dummy-usr.png"
             alt="User"
             className="rounded-full w-[28%] h-[28%] md:w-[24%]  md:h-[24%] lg:w-[16%] lg-h[16%]"
           />
-          <div className="px-4">
+          <div className="px-2">
             <h6 className="font-semibold text-light-text-pr">Evanto</h6>
             <p className="text-light-text-sc text-xs ">Project Manager</p>
           </div>
